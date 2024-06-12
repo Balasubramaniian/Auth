@@ -8,7 +8,7 @@
                 <input type="text" name="age" id="age" formControlName="age" class="form-control">
                 <label for="mail" class="form-label">Mail: </label>
                 <input type="text" name="mail" id="mail" formControlName="mail" class="form-control">
-                <span class="help-block" *ngIf="!form.get('mail')?.valid && form.get('mail')?.touched">Mail id is Not Valid</span>
+                <small class="help-block text-danger" *ngIf="!form.get('mail')?.valid && form.get('mail')?.touched">Mail id is Not Valid</small>
                 <button class="btn btn-success mt-2" >Submit</button>
             </form>
         </div>
