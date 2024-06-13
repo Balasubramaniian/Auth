@@ -1,1 +1,19 @@
-<p>home works!</p>
+<div class="container-fluid">
+    <label for="search" class="form-label">Search: </label>
+    <input type="search" name="search" class="form-control" [(ngModel)]="searchText">
+  </div>
+  
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-3" *ngFor="let arr of filteredArray" style="width: 230px">
+        <a class="text-decoration-none">
+          <img highlight class="card-img-top" [src]="arr.image" alt="Card image" style="width:100%">
+          <div class="card-body mt-3">
+            <h4 class="card-title text-black fw-bold text-center">{{arr.name}}</h4>
+            <h4 class="card-title text-black fw-bold text-center">{{arr.dept}}</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  

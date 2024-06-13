@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormArray, FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form',
@@ -18,12 +19,13 @@ export class FormComponent {
     'mail': new FormControl('', [Validators.required, Validators.maxLength(12),Validators.minLength(5)])
   })
 
-  constructor(private fb: FormBuilder){}
+  constructor(private fb: FormBuilder,private router:Router){}
 
   ngOnInit(): void {
   }
   Submit(){
     console.log(this.form);
     console.log(this.form.value);
+    this.router.navigateByUrl('/login');
   }
 }

@@ -1,13 +1,25 @@
-<ul class="nav nav-tabs">
-   <li class="nav-item">
-    <a routerLink="/">Home</a>
-   </li>
-   <li class="nav-item">
-    <a routerLink="/form">Form</a>
-   </li>
-   <li class="nav-item">
-    <a routerLink="/login">Login</a>
-   </li>
-</ul>
+<nav class="navbar navbar-expand-sm bg-dark">
+   <div class="container-fluid">
+      <ul class="nav nav-tabs ms-auto">
+         <li class="nav-item">
+          <a routerLink="/" class="nav-link text-white p-3">Home</a>
+         </li>
+         <li class="nav-item">
+          <a routerLink="/form" class="nav-link text-white p-3">Form</a>
+         </li>
+         <li class="nav-item">
+          <a routerLink="/login" class="nav-link text-white p-3">Login</a>
+         </li>
+         <li class="nav-item">
+            <a routerLink="/display" class="nav-link text-white p-3">Display</a>
+           </li>
+           <li class="nav-item">
+            <a routerLink="/lazy" class="nav-link text-white p-3">Lazy</a>
+           </li>
+      </ul>
+   </div>
+   
+</nav>
+
 
 <router-outlet />

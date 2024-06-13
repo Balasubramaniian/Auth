@@ -1,0 +1,37 @@
+<div class="mt-5">
+    <ng-container *ngIf="bool; else nodata" >
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Provident hic ab debitis recusandae aspernatur aut, possimus 
+        tempora fuga voluptates, adipisci molestiae perspiciatis eius 
+        optio sit ex culpa facilis veniam ad?
+    </ng-container>
+    <ng-template #nodata>
+    <h1>There is error</h1>
+    </ng-template>
+    <button (click)="bool =!bool">Click</button>
+</div>
+
+<br>
+<br>
+<div class="container">
+    <app-login>
+        <p>This Is Login1</p>
+        <button>Click1</button>
+    </app-login>
+    <app-login>
+        <p>This Is Login2</p>
+        <button>Click2</button>
+    </app-login>
+    <app-login>
+        <p>This Is Login3</p>
+        <button>Click3</button>
+    </app-login>
+</div>
+
+<br><br>
+
+<div class="container">
+    <p custom>Welcome</p>
+    <p custom>Welcome</p>
+    <p custom>Welcome</p>
+</div>
